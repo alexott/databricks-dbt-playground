@@ -16,3 +16,12 @@ models:
           - relationships:
               to: ref('bronze_orders')
               field: order_id 
+  - name: gold_orders_customer
+    columns:
+      - name: customer_id
+        tests:
+          - unique
+          - not_null
+          - relationships:
+              to: ref('silver_orders')
+              field: customer_id 

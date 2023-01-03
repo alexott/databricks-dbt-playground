@@ -1,4 +1,4 @@
-{% for order_id in range(1, 501)%}
+{% for order_id in range(1, 201)%}
 SELECT {{ order_id }} AS order_id, 
   make_timestamp(2022, cast (rand()*12+1 as int), cast (rand()*28+1 as int), 
                  cast (rand()*24 as int), cast (rand()*60 as int), cast (rand()*60 as int)) AS order_date_time,
