@@ -1,0 +1,16 @@
+[tool.poetry]
+name = "databricks-dbt-playground"
+version = "0.1.0"
+description = ""
+authors = ["Alex Ott <alexott@gmail.com>"]
+readme = "README.md"
+#packages = [{include = "databricks_dbt_playground"}]
+
+[tool.poetry.dependencies]
+python = "^3.8"
+dbt-databricks = "^1.3.2"
+
+
+[build-system]
+requires = ["poetry-core"]
+build-backend = "poetry.core.masonry.api"
